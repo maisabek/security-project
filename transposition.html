@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="this simple layout">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h2>transpoition</h2>
+    <div class="information">
+    <div class="container">
+        <ul class="classic-list info-list">
+            <li data-class="about" class="selected first">Encrypt</li>
+            <li data-class="history">Decrypt</li>
+        </ul>
+        <div class="info-content">
+            <div class="about">
+                <form class="heade" method="post">
+                    <input type="text" placeholder="Enter plain Text" id="plain-text" required>
+                    <input type="text" placeholder="key" id="key" required><br><br>
+                    <button id="Encrypt" type="button">Encrypt</button>
+                    <div id="Encrypt-result"></div>
+                </form>
+            </div>
+            <div class="history">
+                <form class="heade" method="post">
+                    <input type="text" placeholder="Enter cipher text" id="cipher-text" required>
+                    <input type="text" placeholder="key" id="ke" required><br><br>
+                    <button id="Decrypt" type="button">Decrypt</button>
+                    <div id="Decrypt-result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </header>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/transposition.js"></script>
+</body>
+</html>
